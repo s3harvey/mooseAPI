@@ -1,0 +1,36 @@
+{
+  "name": "managementDB",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "firstName": {
+      "type": "string",
+      "required": true
+    },
+    "lastName": {
+      "type": "string",
+      "required": true
+    },
+    "position": {
+      "type": "string",
+      "required": true
+    },
+    "clearance": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "investorDB": {
+      "type": "belongsTo",
+      "model": "investorDB",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

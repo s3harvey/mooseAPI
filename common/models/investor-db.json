@@ -1,0 +1,63 @@
+{
+  "name": "investorDB",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "user": {
+      "fk": {
+        "type": "forginKey"
+      },
+      "firstName": {
+        "type": "string",
+        "required": true
+       },
+      "middleName": {
+        "type": "string",
+        "required": false
+      },
+      "lastName": {
+        "type": "string",
+        "required": true
+        },
+      "address": {
+        "streetName": {
+          "type": "string",
+          "required": true
+        },
+        "city": {
+          "type": "string",
+          "required": true
+        },
+        "province": {
+          "type": "string",
+          "required": true
+        },
+        "postalCode": {
+          "type": "string",
+          "required": true
+        }
+      },
+
+      "attachedBroker": {
+        "type": "string",
+         "required": true
+      },
+
+      "email": {
+        "type": "string",
+         "required": true
+      },
+      "username": {
+        "type": "string",
+        "required": true
+      }
+    }   
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
